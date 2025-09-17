@@ -1,0 +1,35 @@
+{
+  "name": "stampme",
+  "version": "1.0.0",
+  "description": "Simple CLI to approve GitHub PRs via HTTP requests",
+  "main": "dist/index.js",
+  "bin": {
+    "stampme": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [
+    "github",
+    "pr",
+    "approval",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.5",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
